@@ -1,0 +1,25 @@
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.5s ease;
+}
+
+#cakeEmoji {
+  font-size: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#cakeEmoji:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  #cakeEmoji {
+    font-size: 80px;
+  }
+}

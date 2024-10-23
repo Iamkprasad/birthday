@@ -1,0 +1,105 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #f4f4f4; /* Lighter background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure full viewport height */
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: opacity 0.3s ease;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.button {
+  background-color: #4CAF50; /* Modern green button */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  .button {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 8px 0;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+/* Add more modern styles as needed */
+h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
